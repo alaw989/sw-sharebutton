@@ -1,0 +1,8 @@
+.box {
+  width: 100px;
+  height: 100px;
+  padding: 50px; }
+  .box:before {
+    content: "\f1e1";
+    font-family: "FontAwesome";
+    font-size: 100px; }
