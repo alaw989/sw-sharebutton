@@ -1,29 +1,51 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <link rel="stylesheet" href="/css/styles.css"> 
-        <script src="https://use.fontawesome.com/d1a05170da.js"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://use.fontawesome.com/d1a05170da.js"></script>
+</head>
+
+<body>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')
+    </script>
+    <!--
+    <div class="box">
+        <img src="/images/shareiconembed.png">  
+    </div>
+         -->
+    <div class="sharebox-container">
+        <div class="box">
+            <div class="box2" id="box2">
+            </div>
+            <div class="box3" id="box3">
+            </div>
+            <div class="box4" id="box4">
+            </div>
+        </div>
+    </div>
 
 
-        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+    <script>
+    $(".box").click(function() {
+            $('.box2').toggleClass("slide");
+            $('.box3').toggleClass("slide2");
+            $('.box4').toggleClass("slide3");
+        });
 
-	<div class="box">
-		
-	</div>
-    </body>
+
+    
+    </script>
+
 </html>
-
